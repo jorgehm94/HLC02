@@ -1,0 +1,60 @@
+html {
+  font-family: sans-serif;
+}
+
+label {
+  flex: 2;
+  line-height: 2;
+  text-align: right;
+  padding-right: 20px;
+}
+
+input, textarea {
+  flex: 7;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+textarea {
+  height: 60px;
+}
+
+select {
+	font-size: 1.5rem;
+}
+
+
+li{
+    list-style-type: circle;
+}
+
+legend
+{
+    float: inline-start;
+    display: inline-block;
+    list-style-type: circle;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Solway', serif;
+    color: mediumblue;
+}
+
+#bloqueDatosPersonales
+{
+    background-color: wheat;
+    border-color: red;
+    
+}
+
+#bloqueDatosAdicionales
+{
+    background-color: thistle;
+    border-color: red;
+}
+
+#bloqueDatosAdicionalesEscritos
+{
+    background-color: #80F6F2;
+    border-color: red;
+}

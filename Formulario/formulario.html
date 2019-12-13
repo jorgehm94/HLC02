@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <title>Contáctanos</title>
+</head>
+
+<body>
+    <script src="form.js"></script>
+    <h1 style="text-align:center">HOJA DE INSCRIPCIÓN</h1>
+    <h1 style="text-align:center">EN EL CURSO SQL</h1>
+    <form>
+        <fieldset id="bloqueDatosPersonales">
+            <legend id="hola">Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td>Apellido:</td>
+                    <td>DNI</td>
+                </tr>
+                <tr>
+                    <td><input id="nombre" type="text" name="nombre" /></td>
+                    <td><input id="apellidos" type="text" name="apellidos" /></td>
+                    <td><input id="dni" type="text" name="dni" /></td>
+                </tr>
+                <tr>
+                    <td>Localidad de Nacimiento</td>
+                    <td>Provincia:</td>
+                    <td>Fecha de Nacimiento</td>
+                </tr>
+                <tr>
+                    <td><input id="localidad" type="text" name="localidad" /></td>
+                    <td>
+                        <select name="provincia">
+                            <option>Huelva</option>
+                            <option>Sevilla</option>
+                            <option>Cádiz</option>
+                            <option>Córdoba</option>
+                            <option>Jaén</option>
+                            <option>Granada</option>
+                            <option>Málaga</option>
+                            <option>Almería</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input id="fecha" type="date" name="fecha" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Dirección</td>
+                    <td>Código Postal:</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id="direccion" type="text" size="40" name="direccion" />
+                    </td>
+                    <td>
+                        <input id="codpostal" type="text" name="codpostal" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset id="bloqueDatosAdicionales">
+            <legend>Datos Académicos</legend>
+			<br/>
+            <p>Que tipo de lenguajes de programación conoces:</p>
+            <ul>
+                <li><input id="checkbox1" type="checkbox" name="PHP" value="PHP" />PHP</li>
+                <li><input id="checkbox2" type="checkbox" name="SQL" value="SQL" />SQL</li>
+                <li><input id="checkbox3" type="checkbox" name="C" value="C" />C</li>
+                <li><input id="checkbox4" type="checkbox" name="C++" value="C++" />C++</li>
+                <li><input id="checkbox5" type="checkbox" name="C#" value="C#" />C#</li>
+                <li><input id="checkbox6" type="checkbox" name="JAVA" value="JAVA" />JAVA</li>
+            </ul>
+        </fieldset>
+		<fieldset id="bloqueDatosAdicionalesEscritos">
+            <legend>Datos Adicionales</legend>
+			<br/>
+            <p>Padece alguna enfermedad: </p>
+            <ul >
+                <li><input type="radio" name="enfermedad" value="PHP" />Si</li>
+                <li><input type="radio" name="enfermedad" value="SQL" />No</li>
+            </ul>
+			<p>En caso de padecerla indique cual y un contacto de emergencia</p>
+			<p><textarea name="comment" cols="40" rows="5"></textarea></p>
+        </fieldset>
+        <input type="hidden" id="acticuloId" name="articuloId" value="34657">
+        <p>
+            <input onclick="comprobacion()" class="button" type="submit" value="Enviar Solicitud" />
+        </p>
+    </form>
+    
+</body>
+
+</html>
