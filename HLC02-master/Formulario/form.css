@@ -1,0 +1,144 @@
+html {
+  font-family: sans-serif;
+}
+
+label {
+  flex: 2;
+  line-height: 2;
+  text-align: right;
+  padding-right: 20px;
+}
+
+input, textarea {
+  flex: 7;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+textarea {
+  height: 60px;
+}
+
+select {
+	font-size: 1.5rem;
+}
+
+
+li{
+    list-style-type: circle;
+}
+
+legend
+{
+    float: inline-start;
+    display: inline-block;
+    list-style-type: circle;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Solway', serif;
+    color: mediumblue;
+}
+
+#bloqueDatosPersonales
+{
+    border-color: red;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+#bloqueDatosAdicionales 
+{
+    border-color: red;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+#bloqueDatosAdicionales h1
+{
+   color: darkblue; 
+   font-size: 25px; 
+}
+
+#bloqueDatosPersonales h1
+{
+   color: darkblue; 
+   font-size: 25px; 
+}
+
+#bloqueDatosAdicionalesEscritos h1
+{
+   color: darkblue; 
+   font-size: 25px; 
+}
+
+#bloqueDatosAdicionalesEscritos
+{
+    border-color: red;
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+#bloqueDatosAdicionales ul li:hover {
+  background-color: darkmagenta;
+}
+
+#bloqueDatosAdicionales ul li {
+  display:inline-block;
+}
+
+.divclass h1{
+  margin-top: 20px;
+  text-align: center;
+  color: blueviolet;
+  font-size: 30px;
+  text-shadow: 2px 2px #FF0000;
+}
+
+#butt{
+  font-family: sans-serif; 
+  font-size: 18px; 
+  font-weight: 400; 
+  color: #ffffff; 
+  background:#ee0467
+  
+}
+
+body
+{
+  text-align: center;
+  background-color: #889ccf;
+  background-image: linear-gradient(#889ccf,#436acc); 
+  display: block;
+  
+  
+}
+
+table
+{
+  text-align: center;
+  display:inline-block /*para mover los input*/
+  
+}
+
