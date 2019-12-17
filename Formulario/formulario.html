@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../Index/index.css" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../Imagenes/21.png" />
     <title>Contáctanos</title>
 </head>
 
@@ -28,13 +29,16 @@
      </nav>
  </header>
 
-<body>
+<body onload="cargandoVentana()">
     <script src="form.js"></script>
-    <h1 style="text-align:center">HOJA DE INSCRIPCIÓN</h1>
-    <h1 style="text-align:center">EN EL CURSO SQL</h1>
+    <div id="div1" class="divclass">
+    <h1 >HOJA DE INSCRIPCIÓN</h1>
+    <h1 >EN EL CURSO HTML5,CSS3 Y JAVASCRIPT</h1>
+    </div>
     <form>
         <fieldset id="bloqueDatosPersonales">
-            <legend id="hola">Datos Personales</legend>
+            <legend id="hola"></legend>
+            <h1>Datos Personales:</h1>
             <table>
                 <tr>
                     <td>Nombre:</td>
@@ -85,7 +89,8 @@
             </table>
         </fieldset>
         <fieldset id="bloqueDatosAdicionales">
-            <legend>Datos Académicos</legend>
+            <legend></legend>
+            <h1>Datos Académicos:</h1>
 			<br/>
             <p>Que tipo de lenguajes de programación conoces:</p>
             <ul>
@@ -98,19 +103,20 @@
             </ul>
         </fieldset>
 		<fieldset id="bloqueDatosAdicionalesEscritos">
-            <legend>Datos Adicionales</legend>
+            <legend></legend>
+            <h1>Datos Adicionales:</h1>
 			<br/>
             <p>Padece alguna enfermedad: </p>
             <ul >
-                <li><input type="radio" name="enfermedad" value="PHP" />Si</li>
-                <li><input type="radio" name="enfermedad" value="SQL" />No</li>
+                <input type="radio" name="enfermedad" value="si" />Si<br>
+                <input type="radio" name="enfermedad" value="no" />No
             </ul>
 			<p>En caso de padecerla indique cual y un contacto de emergencia</p>
 			<p><textarea name="comment" cols="40" rows="5"></textarea></p>
         </fieldset>
         <input type="hidden" id="acticuloId" name="articuloId" value="34657">
         <p>
-            <input onclick="comprobacion()" class="button" type="submit" value="Enviar Solicitud" />
+            <input id="butt" onclick="comprobacion()" class="button" type="submit" value="Enviar Solicitud" />
         </p>
     </form>
     

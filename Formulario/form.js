@@ -70,3 +70,8 @@ function comprobarRadioButton()
     return true;
 
 }
+
+function cargandoVentana()
+{
+  console.log("cargando formulario");
+}
