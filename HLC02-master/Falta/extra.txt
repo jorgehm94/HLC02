@@ -1,9 +1,0 @@
-5.2.- Slideshow, 
-https://www.w3schools.com/howto/howto_js_slideshow.asp
-5.3.- Modal images. Responsive Image Grid, etc.
-5.4.- Cualquier otra animación o efecto.
-
-
-6.- Firefox Developer Tools.https://developer.mozilla.org/en-US/docs/Tools
-
-7.- Chrome DevTools.https://developers.google.com/web/tools/chrome-devtools
