@@ -1,18 +1,3 @@
-1-En el principal los articulos ponerle borde y meterle en el css
-  border-radius en otro
-{
-border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px;}
-
-2- algo que no nos guste y ponerle opacity: 0.5;
-
-3-y en vez src usar srcset meter imagen y ponerle float: right; con un texto en la derecha y luego a una parte del texto le ponemos clear: both; para quitar efecto y se ponga debajo
-
-
-4-para una imagen troll hay que poner los 3 tipos de esto.
-https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_transform
-
 5-No se donde ponerlo
 https://www.w3schools.com/css/tryit.asp?filename=trycss3_transition1
 

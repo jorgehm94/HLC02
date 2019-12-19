@@ -4,28 +4,5 @@ Uso de objetos (Browser BOM): Window Navigator Screen History LocationUso de obj
 3-NI IDEA
 Manipulación del DOM: getElementByID, etc.< a href="#" id="mienlace" style="background-color: orange;">Enlace demo< /a >< script >document.getElementById("mienlace").style.backgroundColor="orange";< /script>
 
-4-cuando metamos una imagen le ponemos  onmouseover="bigImg(this)" como atributo y en el script 
-
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
-
-onmouseout="normalImg(this)"
-
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
-}
-
-se agranda y luego se vuelve chica
-
-
 5-Selectores o referencias: getElementsByTagName,getElementByClassName,querySelector, querySelectorAll().
 -Ejemplos básicos: mostrar o ocultar información (texto) y modificar los estilos
-
-
-6-document.addEventListener("click", function(){
-  document.getElementById("demo").innerHTML = "Hello World!";
-
-podemos hacer que un text cambie cuando lo pulses

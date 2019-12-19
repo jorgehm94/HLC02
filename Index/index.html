@@ -15,6 +15,7 @@
 
 
 <body>
+    <script src="index.js"></script>
     <header id="header">
         <img class="imagenes" width="50" height="50" src="../Imagenes/chrome.png"/>
         <img class="imagenes" width="50" height="50" src="../Imagenes/iconofirefox.png"/>
@@ -34,7 +35,7 @@
      <section class="sUno">
          <h1 class="major">¿Que es HTML?</h1>
 
-         <article>
+         <article id="articulo1">
              <p>HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcas de hipertexto’), 
                  hace referencia al lenguaje de marcado para la elaboración de páginas web.
                   Es un estándar que sirve de referencia del software que conecta con la
@@ -42,11 +43,42 @@
                    un código (denominado código HTML) para la definición de contenido de una página web, como texto,
                     imágenes, videos, juegos, entre otros</p>
          </article>
+         <br>
+         <img id="imagen1" srcset="../Imagenes/que.png" height="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" >
+         <br>
+         <article id="articulo2">
+            <p>El HTML se escribe en forma de «etiquetas», rodeadas por corchetes angulares (<,>,/). 
+                El HTML también puede describir, hasta un cierto punto, la apariencia de un documento, 
+                y puede incluir o hacer referencia a un tipo de programa llamado script, el cual puede afectar 
+                el comportamiento de navegadores web y otros procesadores de HTML.​</p>
+        </article>
+        <img id="imagen3" src="../Imagenes/espiral.png" height="120" >
+        <h1 class="major"></h1>
+        <h1 class="major">¿Que es CSS?</h1>
+        
+            <img id="imagen2" src="../Imagenes/css.png" height="120" >
+            <p> 
+                CSS está diseñado principalmente para marcar la separación del contenido del documento y 
+                la forma de presentación de este, características tales como las capas o layouts, 
+                los colores y las fuentes.4​ Esta separación busca mejorar la accesibilidad 
+                del documento, proveer más flexibilidad y control en la especificación 
+                de características
+            </p>
+            <p id="parrafoClear"> 
+                presentacionales, permitir que varios documentos HTML 
+                compartan un mismo estilo usando una sola hoja de estilos separada 
+                en un archivo .css, y reducir la complejidad y la repetición de código en la estructura del documento.
+            </p>
+        <br>
      </section>
 </body>
+<aside>
+
+</aside>
 
 <footer>
-
+    <p>Letra pequeña de la web : </p>
+    <p id="cambioOpacity" onclick="evento()">por visitar la página debera pagar 10 euros</p>
 </footer>
 
 </html>
