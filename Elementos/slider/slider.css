@@ -1,0 +1,12 @@
+.mySlides {
+    display:none;
+}
+
+.SLIDER {
+    display:block;
+    margin:auto;
+
+    border: 2px solid white;
+	padding: 10px;
+	border-radius: 25px;
+}
