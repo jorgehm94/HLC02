@@ -1,4 +1,5 @@
 
+var euros = 0;
 
 function bigImg(x) {
     x.style.height = "300px";
@@ -12,9 +13,12 @@ function bigImg(x) {
 
   function evento()
   {
-    document.getElementById("cambioOpacity").addEventListener("click", function(){
-        document.getElementById("cambioOpacity").innerHTML = "por visitar la página debera pagar 20 euros";
+    euros = euros+10;
+    document.getElementById("cambioOpacity").addEventListener("click", function (){
+      
+      document.getElementById("cambioOpacity").innerHTML = "por visitar la página debera pagar "+euros+" euros";
     });
+    
   }
 
   function transicion(){
@@ -30,5 +34,22 @@ function bigImg(x) {
 
     for (i = 0; i < texto.length; i++) {
       texto[i].innerHTML="Info <---"
+    }
+  }
+
+  function autores(){
+    var texto = document.getElementsByClassName('autores');
+
+    for (i = 0; i < texto.length; i++) {
+      texto[i].innerHTML="David seda Jimenez"+"<br>"+"Jorge Herrera Molina"
+    }
+
+  }
+
+  function autoresNormal(){
+    var texto = document.getElementsByClassName('autores');
+
+    for (i = 0; i < texto.length; i++) {
+      texto[i].innerHTML="Autores (Pasame el raton)"
     }
   }

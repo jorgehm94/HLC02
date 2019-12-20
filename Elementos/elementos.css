@@ -1,0 +1,28 @@
+
+div.videos
+{
+    margin:auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#html, #css, #js, #firefox, #chrome
+{
+    display: none;
+}
+
+#video-activo
+{
+    margin:auto;
+    display: block;
+    width: 800px;
+    height: 580px;
+}
+
+
+body{
+    text-align:center;
+  }
+

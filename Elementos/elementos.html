@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="elementos.css" type="text/css"/>
         <link rel="stylesheet" href="slider/slider.css" type="text/css"/>
         <link rel="stylesheet" href="../Index/index.css" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -16,11 +17,12 @@
     <body>
         
         <header id="header">
-            <img class="imagenes" width="50" height="50" src="../Imagenes/chrome.png"/>
-            <img class="imagenes" width="50" height="50"  src="../Imagenes/iconofirefox.png"/>
-            <img class="imagenes" width="50" height="50" src="../Imagenes/s.png"/>
-            <img class="imagenes" width="50" height="50" src="../Imagenes/6.png"/>
-            <img class="imagenes" width="50" height="50" src="../Imagenes/21.png"/>
+            <img class="imagenes" alt="chrome" width="50" height="50" src="../Imagenes/chrome.png"/>
+            <img class="imagenes" alt="firefox" width="50" height="50" src="../Imagenes/iconofirefox.png"/>
+            <img class="imagenes" alt="html" width="50" height="50" src="../Imagenes/s.png"/>
+            <img class="imagenes" alt="js" width="50" height="50" src="../Imagenes/6.png"/>
+            <img class="imagenes" alt="css" width="50" height="50" src="../Imagenes/21.png"/>
+        
 
             <nav>
                 <ul>
@@ -32,18 +34,51 @@
         </header>
 
         <section>
+            <script src="elementos.js"></script>
             <article>
-                
                 <div class="SLIDER" style="max-width:600px">
-                    <img class="mySlides" src="slider/html5.jpg" style="width:100%">
-                    <img class="mySlides" src="slider/css3.jpg" style="width:100%">
-                    <img class="mySlides" src="slider/js.png" style="width:100%">
-                    <img class="mySlides" src="slider/fire.png" style="width:100%">
-                    <img class="mySlides" src="slider/chrome-dev-tools.jpg" style="width:100%">
+                    <img alt="html" class="mySlides" src="slider/html5.jpg" style="width:100%">
+                    <img alt="css" class="mySlides" src="slider/css3.jpg" style="width:100%">
+                    <img alt="js" class="mySlides" src="slider/js.png" style="width:100%">
+                    <img alt="firefox" class="mySlides" src="slider/fire.png" style="width:100%">
+                    <img alt="chrome" class="mySlides" src="slider/chrome-dev-tools.jpg" style="width:100%">
                 </div>
-                
+
+                <video id="html" width="500" controls>
+                    <source src="vids/html5.mp4" type="video/mp4">
+                        Tu navegador no admite videos.
+                </video>
+                <video id="css" width="500" controls>
+                    <source src="vids/css3.mp4" type="video/mp4">
+                        Tu navegador no admite videos.
+                </video>
+
+                <video id="js" width="500" controls>
+                    <source src="vids/js.mp4" type="video/mp4">
+                        Tu navegador no admite videos.
+                </video>
+
+                <video id="firefox" width="500" controls>
+                    <source src="vids/fdeveloper.mp4" type="video/mp4">
+                        Tu navegador no admite videos.
+                </video>
+
+                <video id="chrome" width="500" controls>
+                    <source src="vids/DevTools.mp4" type="video/mp4">
+                        Tu navegador no admite videos.
+                </video>
+
+                <h1 class="major">Galeria de videos</h1>
+                <div class="videos">
+                    <button onclick="cargarVideoHtml()"> HTML5 </button>
+                    <button onclick="cargarVideoCss()"> CSS3 </button>
+                    <button onclick="cargarVideoJs()"> JavaScript </button>
+                    <button onclick="cargarVideoFire()"> Firefox Dev </button>
+                    <button onclick="cargarVideoDev()"> Chrome Dev </button>
+                </div>
             </article>
         </section>
         <script src="slider/slider.js"></script>
+        
     </body>
 </html>

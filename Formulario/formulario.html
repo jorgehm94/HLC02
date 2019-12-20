@@ -13,23 +13,25 @@
     <title>Contáctanos</title>
 </head>
 
-<header id="header">
-    <img class="imagenes" width="50" height="50" src="../Imagenes/chrome.png"/>
-    <img class="imagenes" width="50" height="50"  src="../Imagenes/iconofirefox.png"/>
-    <img class="imagenes" width="50" height="50" src="../Imagenes/s.png"/>
-    <img class="imagenes" width="50" height="50" src="../Imagenes/6.png"/>
-    <img class="imagenes" width="50" height="50" src="../Imagenes/21.png"/>
-
-     <nav>
-         <ul>
-             <li><a href="../Index/index.html">Principal</a></li>
-             <li><a href="../Elementos/elementos.html">Elementos</a></li>
-             <li><a href="../Formulario/formulario.html" class="active" >Formulario</a></li>
-         </ul>
-     </nav>
- </header>
 
 <body onload="cargandoVentana()">
+
+    <header id="header">
+        <img class="imagenes" alt="chrome" width="50" height="50" src="../Imagenes/chrome.png"/>
+        <img class="imagenes" alt="firefox" width="50" height="50" src="../Imagenes/iconofirefox.png"/>
+        <img class="imagenes" alt="html" width="50" height="50" src="../Imagenes/s.png"/>
+        <img class="imagenes" alt="js" width="50" height="50" src="../Imagenes/6.png"/>
+        <img class="imagenes" alt="css" width="50" height="50" src="../Imagenes/21.png"/>
+        
+         <nav>
+             <ul>
+                 <li><a href="../Index/index.html">Principal</a></li>
+                 <li><a href="../Elementos/elementos.html">Elementos</a></li>
+                 <li><a href="../Formulario/formulario.html" class="active" >Formulario</a></li>
+             </ul>
+         </nav>
+     </header>
+
     <script src="form.js"></script>
     <div id="div1" class="divclass">
     <h1 >HOJA DE INSCRIPCIÓN</h1>
@@ -108,8 +110,8 @@
 			<br/>
             <p>Padece alguna enfermedad: </p>
             <ul >
-                <input type="radio" name="enfermedad" value="si" />Si<br>
-                <input type="radio" name="enfermedad" value="no" />No
+                <li><input type="radio" name="enfermedad" value="si" />Si</li>
+                <li><input type="radio" name="enfermedad" value="no" />No</li>
             </ul>
 			<p>En caso de padecerla indique cual y un contacto de emergencia</p>
 			<p><textarea name="comment" cols="40" rows="5"></textarea></p>
